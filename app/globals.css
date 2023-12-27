@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #848484;
+}
+
+input[type=number] {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+  width: 50px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+input[type=color] {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 2.7rem;
+  line-height: 3rem;
+  letter-spacing: -0.15rem;
+  resize: none;
+  overflow-y: hidden;
+  padding-top: 3rem;
+  box-sizing: border-box;
+  display: block;
+}
+
+textarea::placeholder {
+  color: #fff;
+}
+
+.dropdown-title {
+  width: 70px;
+  padding: 0.25rem 0.3rem 0.3rem 0.5rem;
+  height: 37px;
+  border-radius: 3px;
+  border: 1px solid rgba(249, 249, 249, 0.08);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.dropdown-menu {
+  padding: 0.25rem 0 0.4rem 0.5rem;
+  position: absolute;
+  background-color: #191919;
+  border: 1px solid #3c3c3c;
+  border-radius: 3px;
+}
+
+/* input file */
+.input-file {
+  display: none;
+}
+
+label[for="input-file"] {
+  padding: 0.5rem 0.75rem;
+  flex: 1 1 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* canvas */
+.text-drop {
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
