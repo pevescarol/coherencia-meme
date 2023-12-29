@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +13,7 @@
 body {
   background-color: #000;
   color: #848484;
+  font-family: 'Poppins', sans-serif;
 }
 
 input[type=number] {
@@ -89,4 +92,10 @@ label[for="input-file"] {
   text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
     -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
     2px 2px 5px #000;
+}
+
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+
 }
