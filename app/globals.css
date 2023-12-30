@@ -41,8 +41,7 @@ textarea {
   background: none;
   border: none;
   font-size: 2.7rem;
-  line-height: 3rem;
-  letter-spacing: -0.15rem;
+  font-weight: 700;
   resize: none;
   overflow-y: hidden;
   padding-top: 3rem;
@@ -68,7 +67,7 @@ textarea::placeholder {
 }
 
 .dropdown-menu {
-  padding: 0.25rem 0 0.4rem 0.5rem;
+  
   position: absolute;
   background-color: #191919;
   border: 1px solid #3c3c3c;
@@ -99,3 +98,39 @@ label[for="input-file"] {
   -webkit-text-stroke: 2px white;
 
 }
+
+/* 
+.animation-btn:hover {
+  transform: translateY(-0.25em);
+} */
+
+.animation-btn:hover, .animation-btn2:hover {
+  animation: none;
+}
+
+.animation-btn  {
+  animation: float 1.5s linear alternate infinite;
+}
+
+@keyframes float {
+	50% {
+    transform: translateY(-px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.animation-btn2  {
+  animation: float2 1.5s linear alternate infinite;
+}
+
+@keyframes float2 {
+	50% {
+    transform: translateY(-px);
+  }
+  100% {
+    transform: translateY(-14px);
+  }
+}
+
