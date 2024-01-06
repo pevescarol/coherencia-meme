@@ -13,7 +13,7 @@ Este proyecto permite a los usuarios crear memes de dos maneras distintas:
 - **Crear Meme**: Permite cargar imágenes y añadir texto para crear memes personalizados. También ofrece la opción de exportar la imagen generada.
 
 #### Ejemplo de coherencia:
-<img src="../../public/coherenciaplease.png" alt="Ejemplo de Coherencia" width="300"/>
+<img src="/public/coherenciaplease.png" alt="Ejemplo de Coherencia" width="300"/>
 
 
 ### Contribución
