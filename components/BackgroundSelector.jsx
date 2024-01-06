@@ -27,7 +27,7 @@ const BackgroundSelector = ({ background, setBackground}) => {
         <FiChevronDown />
       </div>
       {showDropdown && (
-        <div className='dropdown-menu top-[74px] w-[62px] rounded-full flex flex-col gap-2'>
+        <div className='dropdown-menu top-[74px] w-[62px] rounded-full flex items-center justify-center py-2 flex-col gap-2'>
           {backgrounds.map((bg, i) => {
             return (
               <div 
