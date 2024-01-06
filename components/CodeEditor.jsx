@@ -4,7 +4,7 @@ import BackgroundSelector from '@/components/BackgroundSelector'
 import { backgrounds } from '@/utils/utilities'
 import {FiDownload, FiChevronDown} from 'react-icons/fi'
 
-const CodeEditor = ({ onColorChange, onBackgroundChange, onSizeChange, sizeColor, exportPng }) => {
+const CodeEditor = ({ onColorChange, onBackgroundChange, onSizeChange, sizeColor, exportPng, textColor }) => {
   const [background, setBackground] = useState(backgrounds[0])
 
   const handleColorChange = (e) => {
@@ -25,8 +25,8 @@ const CodeEditor = ({ onColorChange, onBackgroundChange, onSizeChange, sizeColor
   return (
     <div className='flex flex-wrap gap-6 items-center justify-center md:justify-around' >
       <div>
-        <p className='py-1 text-sm font-medium'>Tamaño</p>
-        <div className='flex items-center justify-center'>
+        <p className='pb-1 text-sm font-medium'>Tamaño</p>
+        <div className='flex items-center justify-center pb-1'>
           <input type="number" value={sizeColor} onChange={handleSizeChange} />   
         </div>
       </div>
@@ -36,7 +36,7 @@ const CodeEditor = ({ onColorChange, onBackgroundChange, onSizeChange, sizeColor
       <div className='flex items-center flex-col justify-center'>
         <p className='py-1 text-sm font-medium'>Color de texto</p>
         <div className='flex items-center justify-center dropdown-title'>
-          <input type="color" onChange={handleColorChange} />   
+          <input type="color" onChange={handleColorChange} value={textColor}/>   
           <FiChevronDown />
         </div>
       </div>

@@ -19,12 +19,12 @@ const MemeCanva = React.forwardRef(({ image, topText, bottomText, sizeText, aspe
           className={`object-cover ${aspectRatio}`}
         />
         <div className="absolute top-5 w-[80%] text-center my-4 px-1 ">
-          <p style={{ fontSize: `${sizeText}px`}} className="text-2xl uppercase text-drop  text-white font-bold">
+          <p style={{ fontSize: `${sizeText}px`}} className="text-2xl uppercase text-drop text-white font-bold">
             {topText}
           </p>
         </div>
         <div className="absolute bottom-5 left-0 w-full text-center">
-          <p style={{ fontSize: `${sizeText}px`}} className="text-2xl text-white text-drop uppercase font-bold">
+          <p style={{ fontSize: `${sizeText}px`}} className="text-2xl text-white text-drop uppercase font-bold ">
             {bottomText}
           </p>
         </div>
@@ -34,7 +34,7 @@ const MemeCanva = React.forwardRef(({ image, topText, bottomText, sizeText, aspe
 
 
   return (
-    <div className="max-w-full overflow-auto mt-8" >
+    <div className="max-w-full h-full mt-8 mb-12" >
       {renderImage()}
     </div>
   );
