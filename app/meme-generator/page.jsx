@@ -4,6 +4,7 @@ import MemeEditor from '@/components/MemeEditor'
 import React, { useRef, useState } from 'react'
 import * as htmlToImage from 'html-to-image'
 import download from 'downloadjs'
+import Back from '@/components/Back'
 
 const GeneratorPage = () => {
   const editorRef = useRef(null)
@@ -48,7 +49,7 @@ const GeneratorPage = () => {
 
 
   return (
-    <section className="h-screen w-full flex flex-col items-center">
+    <section className="h-full w-full flex flex-col items-center">
       <MemeEditor 
         onImageSelect={handleImageSelect}
         onTopTextChange={handleTopTextChange}
@@ -66,6 +67,8 @@ const GeneratorPage = () => {
         ref={editorRef}
         aspectRatio={aspect}
       />
+
+      <Back btn={'bg-[rgb(219,253,0)]'} />
     </section>
   )
 }
