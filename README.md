@@ -12,9 +12,8 @@ Este proyecto permite a los usuarios crear memes de dos maneras distintas:
 - **Coherencia por favor**: Proporciona plantillas para escribir textos sarcásticos. Los usuarios pueden exportar la plantilla una vez completada.
 - **Crear Meme**: Permite cargar imágenes y añadir texto para crear memes personalizados. También ofrece la opción de exportar la imagen generada.
 
-
-![Ejemplo de Coherencia]('../../public/coherenciaplease.png)
-
+#### Ejemplo de coherencia:
+<img src="../../public/coherenciaplease.png" alt="Ejemplo de Coherencia" width="300"/>
 
 
 ### Contribución
